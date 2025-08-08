@@ -1,0 +1,431 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: #555;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+}
+
+/* Estilo galería (si se usa en otras páginas) */
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* NUEVA sección de contacto con redes */
+.contacto-redes {
+    background-color: #777;
+    padding: 1em;
+    text-align: center;
+}
+
+.contacto-redes .info-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contacto-redes a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: transform 0.2s ease;
+}
+
+.contacto-redes a:hover {
+    transform: scale(1.05);
+}
+
+.contacto-redes img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Hace los íconos blancos */
+}
+
+.video-presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  background-color: #f4f4f4;
+}
+
+.video-contacto {
+  width: 100%;
+  max-width: 1000px; /* Puedes ajustar a 1300 o más si lo quieres aún más ancho */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.encabezado {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 1em 0;
+}
+
+.contenedor-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.logo {
+  height: 190px; /* Ajusta según el tamaño del logo */
+}
+
+.texto-header {
+  text-align: center;
+}
+
+.menu {
+  background-color: #555;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+.galeria-paginada {
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-page {
+    column-count: 4;
+    column-gap: 15px;
+    padding: 1em;
+}
+
+.box {
+    break-inside: avoid;
+    margin-bottom: 15px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.box img:hover {
+    transform: scale(1.05);
+}
+/* Sección de contacto moderna */
+.seccion-contacto {
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.seccion-contacto h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Contenedor de las tarjetas */
+.contacto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Cada tarjeta individual (ahora es un <a>) */
+.contacto-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;  /* ← quita el subrayado del enlace */
+    color: inherit;         /* ← hereda el color del texto normal */
+    display: block;
+}
+
+/* Efecto al pasar el mouse */
+.contacto-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Imagen dentro de cada tarjeta */
+.contacto-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+/* Sección de servicios con tarjetas */
+.seccion-servicios {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.seccion-servicios h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #2c2c2c;
+}
+
+/* Contenedor de las tarjetas */
+.servicios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Estilos para la sección de servicios */
+.servicios {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.servicio {
+    background-color: #fefefe;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+.servicio img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.servicio h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.servicio p {
+    font-size: 0.95em;
+    color: #555;
+}/* Modal oculto por defecto */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Contenedor del contenido */
+.modal-contenido {
+    background-color: #fff;
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Botón cerrar */
+.cerrar {
+    color: #aaa;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Responsive para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    header, footer, nav {
+        padding: 1em;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .contenedor-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        height: 140px;
+    }
+
+    .video-contacto {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .gallery-page {
+        column-count: 1;
+        padding: 1em;
+    }
+
+    .contacto-redes .info-contacto {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .contacto-card, .servicio {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .servicios-grid,
+    .contenedor-servicios,
+    .contacto-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    .modal-contenido {
+        width: 95%;
+    }
+}
+.mision {
+    padding: 4em 2em;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.mision .titulo {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+    color: #222;
+    font-weight: bold;
+}
+
+.contenedor-mision {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.tarjeta {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 80px;
+    margin-bottom: 1em;
+}
+
+.tarjeta h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.tarjeta p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5em;
+}
+.nosotros-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* mismo color gris claro */
+    text-align: center;
+}
+
+.nosotros-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.titulo-seccion {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #222;
+}
