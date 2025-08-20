@@ -1,0 +1,122 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: #555;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+}
+
+/* Estilo galería (si se usa en otras páginas) */
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* NUEVA sección de contacto con redes */
+.contacto-redes {
+    background-color: #777;
+    padding: 1em;
+    text-align: center;
+}
+
+.contacto-redes .info-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contacto-redes a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: transform 0.2s ease;
+}
+
+.contacto-redes a:hover {
+    transform: scale(1.05);
+}
+
+.contacto-redes img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Hace los íconos blancos */
+}
+
+.video-presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  background-color: #f4f4f4;
+}
+
+.video-contacto {
+  width: 100%;
+  max-width: 1200px; /* Puedes ajustar a 1300 o más si lo quieres aún más ancho */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.encabezado {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 1em 0;
+}
+
+.contenedor-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.logo {
+  height: 190px; /* Ajusta según el tamaño del logo */
+}
+
+.texto-header {
+  text-align: center;
+}
+
+.menu {
+  background-color: #555;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}

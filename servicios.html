@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Mármoles Prestige</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor-header">
+    <img src="imagenes/logonew.png" alt="Logo de Mármoles Prestige" class="logo">
+    <div class="texto-header">
+      <h1>MÁRMOLES PRESTIGE S.A.S</h1>
+      <p>Fabricación y comercialización de mármol en alta calidad</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="productos.html">Productos</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<section class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="contenedor-servicios">
+        <div class="servicio" onclick="abrirVideo('https://www.youtube.com/embed/-9CrFp2N_g4?si=nEzAPeDKCEeslhZY')">
+            <img src="imagenes/cierra.png" alt="Corte a medida">
+            <h3>Corte a medida</h3>
+            <p>Realizamos cortes personalizados para cualquier espacio o diseño.</p>
+        </div>
+        <div class="servicio" onclick="abrirVideo('https://www.youtube.com/embed/FpWOgqEYcZw?si=xHQrkTb19GvGx_uN')">
+            <img src="imagenes/pulido.png" alt="Pulido y abrillantado">
+            <h3>Pulido y abrillantado</h3>
+            <p>Dejamos cada superficie con un acabado brillante y profesional.</p>
+        </div>
+        <div class="servicio" onclick="abrirVideo('https://www.youtube.com/embed/BYMnCQ-0qiw?si=4T9nFwl0tQzooVho')">
+            <img src="imagenes/instalacion.png" alt="Instalación profesional">
+            <h3>Instalación profesional</h3>
+            <p>Montaje experto garantizando calidad y durabilidad.</p>
+        </div>
+        <div class="servicio" onclick="abrirVideo('https://www.youtube.com/embed/BYMnCQ-0qiw?si=4T9nFwl0tQzooVho')">
+            <img src="imagenes/asesoria.png" alt="Asesoría en diseño">
+            <h3>Asesoría en diseño</h3>
+            <p>Te ayudamos a elegir el mejor diseño según tus necesidades.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para video -->
+<div id="modalVideo" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarVideo()">&times;</span>
+        <iframe id="videoIframe" width="100%" height="400" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Mármoles Prestige S.A.S - Todos los derechos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
