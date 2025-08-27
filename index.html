@@ -11,7 +11,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'AW-17494971223');
     </script>
 
@@ -46,51 +45,29 @@
     </p>
 </section>
 
+<!-- 🔹 FORMULARIO DE CONTACTO CON SEGUIMIENTO DE CONVERSIÓN -->
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <form id="formContacto" action="enviar.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
 <section class="video-presentacion">
   <video class="video-contacto"
-         src="Videos/Encimera de Cuarzo Vs. Granito_ Cómo Elegir la Mejor Encimera para tu Cocina _ Encimera de Granito.mp4"
-         autoplay
-         muted
-         loop
-         playsinline>
+         src="Videos/Encimera.mp4"
+         autoplay muted loop playsinline>
     Tu navegador no soporta el video.
   </video>
-</section>
-
-<section class="nosotros-section">
-    <h2 class="titulo-seccion">NOSOTROS</h2>
-    <div class="nosotros-card">
-        <p>
-            En Mármoles Prestige S.A.S. nos especializamos en la fabricación, transformación y comercialización de mármol de alta calidad, ofreciendo soluciones elegantes y duraderas para proyectos residenciales, comerciales y arquitectónicos.
-
-            Con años de experiencia en el sector y un compromiso constante con la excelencia, brindamos a nuestros clientes materiales seleccionados cuidadosamente, acabados de precisión y un acompañamiento personalizado en cada etapa del proyecto.
-            Nos destacamos por la innovación en diseños, cumplimiento en tiempos de entrega y atención al detalle, garantizando resultados que superan las expectativas.
-        </p>
-    </div>
-</section>
-
-<section class="mision">
-    <h2 class="titulo">MISIÓN Y VISIÓN</h2>
-    <div class="contenedor-mision">
-        <div class="tarjeta">
-            <h3>Misión</h3>
-            <p>
-                En Mármoles Prestige S.A.S. nos dedicamos a la fabricación, transformación y comercialización de mármol y piedras naturales de alta calidad, brindando soluciones estéticas y funcionales para los sectores residencial, comercial, corporativo y arquitectónico.
-
-                Nuestra misión es proporcionar a nuestros clientes productos duraderos, elegantes y precisos, que respondan a las más altas exigencias del diseño y la construcción.
-                Trabajamos con un equipo humano capacitado y con tecnología especializada, bajo principios de calidad, responsabilidad, cumplimiento, innovación y respeto por el medio ambiente, aportando valor real a cada proyecto que asumimos.
-            </p>
-        </div>
-        <div class="tarjeta">
-            <h3>Visión</h3>
-            <p>
-                Ser en el año 2030 una empresa líder a nivel nacional e internacional en el sector de piedras naturales, reconocida por la excelencia de nuestros productos y la calidad de nuestro servicio.
-                Queremos posicionarnos como la primera opción para arquitectos, diseñadores, constructores y clientes finales, por nuestra capacidad de innovación, compromiso con el detalle, sostenibilidad ambiental y adaptación a las tendencias del mercado.
-
-                Aspiramos a seguir creciendo de manera sostenible, expandiendo nuestras operaciones, diversificando nuestros productos y fortaleciendo alianzas estratégicas que nos permitan consolidar nuestra marca como sinónimo de prestigio, confianza y elegancia.
-            </p>
-        </div>
-    </div>
 </section>
 
 <footer>
@@ -98,7 +75,20 @@
     <p>Bogotá - Colombia</p>
 </footer>
 
+<!-- 🔹 Script para disparar conversión al enviar formulario -->
+<script>
+  document.getElementById("formContacto").addEventListener("submit", function() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17494971223/xACzCM6jso4bENemoJZB',
+      'value': 1.0,
+      'currency': 'COP'
+    });
+  });
+</script>
+
 </body>
 </html>
+
+
 
 
